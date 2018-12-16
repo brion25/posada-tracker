@@ -1,0 +1,70 @@
+{
+  "parties": [
+    {
+      "id": 1,
+      "name": "Posada Tia Gorda",
+      "address": "Andador Revolución # 16 Col. Alcaldes",
+      "description": "mi horario seria a las 7:30 de la noche aki los espero kon mucho gusto \uD83C\uDF84☃",
+      "date": "2018-12-23",
+      "coords": {
+        "latitude": 21.3481254,
+        "longitude": -101.9418325
+      }
+    },
+    {
+      "id": 2,
+      "name": "Posada Tia Imelda",
+      "address": "Platon 13, Residencial Santa Elena",
+      "description": "los esperamos a las 8 ☺",
+      "date": "2018-12-21",
+      "coords": {
+        "latitude": 21.347377,
+        "longitude": -101.929604
+      }
+    },
+    {
+      "id": 3,
+      "name": "Posada Tia Irma",
+      "address": "Lopez Rayon 817, San Felipe",
+      "description": "a las 5 pm para que empiece a las 8",
+      "date": "2018-12-19",
+      "coords": {
+        "latitude": 21.350099,
+        "longitude": -101.935802
+      }
+    },
+    {
+      "id": 4,
+      "name": "Posada Tia Yolanda",
+      "address": "San Cirilo 160",
+      "description": "en punto de las 8 pm en San Cirilo no. 160 en la casita de Dael \uD83D\uDE00",
+      "date": "2018-12-17",
+      "coords": {
+        "latitude": 21.373941,
+        "longitude": -101.922640
+      }
+    },
+    {
+      "id": 5,
+      "name": "Posada Tia Ceci",
+      "address": "San Homero 708",
+      "description": "los esperamos en punto de las 8 pm",
+      "date": "2018-12-18",
+      "coords": {
+        "latitude": 21.372735,
+        "longitude": -101.922846
+      }
+    },
+    {
+      "id": 6,
+      "name": "Posada Tia Raquel",
+      "address": "Privada Luis Moreno 656",
+      "description": "aquí los esperamos a las 7:45",
+      "date": "2018-12-16",
+      "coords": {
+        "latitude": 21.359603,
+        "longitude": -101.935638
+      }
+    }
+  ]
+}

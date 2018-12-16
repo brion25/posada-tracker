@@ -1,18 +1,31 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container grid-list-md>
+    <v-layout row wrap justify-center class="parties__container">
+      <v-flex xs12 md6 v-for="(party, index) in parties" :key="index">
+        <PartyCard v-bind:party="party"></PartyCard>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mapGetters } from 'vuex'
 
-export default {
-  name: 'home',
+import PartyCard from '@/components/PartyCard'
+
+export default ({
+  mounted: function () {
+    window.setTimeout(() => {
+      const element = this.$el.querySelector('.today')
+      const rect = element.getBoundingClientRect()
+      window.scrollTo(rect.left, rect.top)
+    }, 250)
+  },
   components: {
-    HelloWorld
-  }
-}
+    PartyCard
+  },
+  computed: mapGetters({
+    parties: 'getParties'
+  })
+})
 </script>

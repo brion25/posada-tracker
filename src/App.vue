@@ -1,31 +1,49 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-content>
+      <router-view></router-view>
+    </v-content>
+    <v-footer>
+      <v-bottom-nav
+        :active.sync="bottomNav"
+        :value="true"
+        absolute
+        color="red darken-4"
+      >
+        <v-btn
+          color="white"
+          flat
+          value="home"
+          to="/"
+        >
+          <span>Inicio</span>
+          <v-icon>home</v-icon>
+        </v-btn>
+        <v-btn
+          color="white"
+          flat
+          value="map"
+          to="/map"
+        >
+          <span>Mapa</span>
+          <v-icon v-text="'$vuetify.icons.map'"></v-icon>
+        </v-btn>
+      </v-bottom-nav>
+    </v-footer>
+  </v-app>
 </template>
-
+<script>
+export default {
+  name: 'App',
+  data () {
+    return {
+      bottomNav: 'home'
+    }
+  }
+}
+</script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  footer {
+    z-index: 999;
+  }
 </style>
