@@ -17,6 +17,7 @@ export default new Vuex.Store({
     parties: data.parties
   },
   getters: {
+    getParty: state => partyId => state.parties.find(({ id }) => id === Number(partyId)) || {},
     getParties: state => _orderBy(state.parties, 'date', 'asc').map(party => ({
       ...party,
       dateFormatted: moment(party.date).format('Do MMM YY'),

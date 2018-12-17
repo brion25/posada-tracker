@@ -1,3 +1,5 @@
 module.exports = {
-  baseUrl: '/posada-tracker/'
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/production-sub-path/'
+    : '/'
 }

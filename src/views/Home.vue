@@ -19,7 +19,7 @@ export default ({
       const element = this.$el.querySelector('.today')
       const rect = element.getBoundingClientRect()
       window.scrollTo(rect.left, rect.top)
-    }, 250)
+    }, 500)
   },
   components: {
     PartyCard
